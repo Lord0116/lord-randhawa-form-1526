@@ -1,0 +1,122 @@
+:root {
+  box-sizing: border-box;
+
+  /* Colors */
+  --border: #ddd;
+
+  --bg: #f5f5f5;
+
+  --btn: #6495ed;
+
+  --txt: black;
+
+  --fontsiz: 1rem;
+
+  --legend: 2rem;
+}
+
+/* Defaults */
+
+body {
+  color: var(--txt);
+  font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+  font-size: var(--fontsiz);
+}
+
+/* Button */
+
+#submit {
+  background-color: var(--btn);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.2em;
+  cursor: pointer;
+  width: 100%;
+  margin: 1em 0;
+}
+
+#submit:hover {
+  background-color: #2c549d;
+}
+
+/* Wrapper for mobile*/
+
+.wrapper {
+  max-width: 50rem;
+  margin: auto;
+}
+
+/* Input fields */
+
+input,
+textarea {
+  margin: auto;
+  width: 100%;
+  border: 1.5px solid var(--border);
+  border-radius: 0.2em;
+  min-height: 2em;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.6em;
+}
+
+textarea {
+  height: 4em;
+}
+
+/* Fieldset: form body */
+fieldset {
+  background-color: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 0.2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  justify-content: center;
+}
+
+/* Legend styling */
+legend {
+  font-size: var(--legend);
+  border: 1.5px solid var(--border);
+  padding: 0.5em 0.5em;
+  margin-bottom: 0.8em;
+  background-color: white;
+}
+
+/* Upper-container */
+.upper-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.8em;
+}
+
+/* upper group */
+.upper-grp {
+  width: 100%;
+}
+
+/* Different Screens */
+
+@media only screen and (min-width: 25rem) {
+  .upper-container {
+    flex-direction: row;
+    gap: 1.8em;
+  }
+
+  #submit {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 40rem) {
+  .upper-container {
+    flex-direction: row;
+    gap: 1.8em;
+  }
+}
